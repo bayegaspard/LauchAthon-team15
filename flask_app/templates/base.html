@@ -1,34 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask Chat Application</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>SAFAI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header class="chat-header">
-        <div class="logo">
-            <svg class="logo-icon" width="40" height="40" viewbox="0 0 100 100">
-                <circle cx="50" cy="50" r="45" fill="none" stroke="#ff6b00" stroke-width="8"></circle>
-                <circle cx="50" cy="50" r="20" fill="#ff6b00"></circle>
-                <path d="M50 10 A40 40 0 0 1 90 50" stroke="#ff6b00" stroke-width="8" fill="none" />
-            </svg>
-            <h1>SAFAI</h1>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="SafAI Logo" class="logo">
+            <span class="tagline">Safety is our priority!</span>
         </div>
-        <h2 id="safety-is-our-priority" class="header-tagline">Safety is our priority!</h2>
     </header>
-
-    <main role="main">
+    <main>
         {% block content %}{% endblock %}
     </main>
-
     <footer>
-        © 2024 Flask Chat App
+        <p>&copy; 2024 SAFAI</p>
     </footer>
 </body>
-
 </html>
