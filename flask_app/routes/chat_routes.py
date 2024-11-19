@@ -52,7 +52,7 @@ rails = LLMRails(config)
 # Home route
 @chat_bp.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('chat.html')
 
 @chat_bp.route('/chat', methods=['GET', 'POST'])
 def chat():
